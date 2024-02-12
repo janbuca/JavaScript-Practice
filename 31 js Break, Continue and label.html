@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Break</title>
+</head>
+<body>
+    <h2>Js Break, continue and label</h2>
+
+    <script>
+        var txt = " ";
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) {
+                break;
+            }
+            txt  += "The number is " + i +"\n ";            
+        }
+        console.log(txt);
+    </script>
+
+    <script>
+        var con = " ";
+        for (let n = 0; n < 10; n++) {
+           if (n == 3) {
+            continue;
+           }
+           con += "The Number is " + n +"\n";
+        }
+        console.log(con);
+    </script>
+
+    <script>
+        var lab = " ";
+        var cars = ["BMW", "Volvo", "Saab", "Ford", "Toyota", "vites"];
+        list:{
+            lab += cars[0] + "\n";
+            lab += cars[1] + "\n";
+            lab += cars[2] + "\n"; 
+            break list;
+            lab += cars[3] + "\n";
+            lab += cars[4] + "\n";
+            lab += cars[5] + "\n";
+        }
+        console.log(lab);
+    </script>
+</body>
+</html>

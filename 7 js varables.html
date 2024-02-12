@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>js varables</title>
+  </head>
+  <body>
+          
+        
+    <h2>Js Tutorials</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <h2>All about the varables propertys.</h2>
+    <script type="text/javascript">
+      var Customer = "Janbuca",
+        itemname = "Diner Table",
+        Price = 500;
+      var x, y, z;
+      x = 25; 
+      y = 55.9;
+      c = 55.9;
+      z = x + y;
+
+      var k; // k is unefine.
+      var g=5; // g is a number.
+      var u="Janbuca"; // u is a string in doble quotes.
+      var m = 'volvo Xc60'; // m is a string in single quotes.
+      var k1 = "It's alright"; // single qoutes inside double quotes.
+      var g1 = "He is called 'Janbuca'";
+      var m1 = 'He is called "Dave"'; // double qutes inside single quotes.
+      var k2 = 16 + "Volvo";
+      var g2 = "16" + "Volvo"; // ading number and a string js will treat the number as a string.
+    //   javastring Number js has only one type of number. number writen with and without of the decimals like.
+     var k3= 65.55 // writen with decimals.
+     var g3= 55 // written without decimals.
+     // javaScribt Booleans. are often used in conditional testing
+     var k4 = true;
+     var g4 = false;
+    //  javascript arrays. js written with square brackets. separeted by comman.
+    var car = ["saab", "Volvo", "BMW"]
+    close.log(car[0] + car[1]+ car[3]);
+
+    // JavaScriopt Object. written with curly braces. it also name:value separed by commans.
+    var person = {firstName:"Janbuca", lastName:"Tshome", age:25, eyecolor:"blue"};
+    // Undefine and Null. with no value is undefined.
+    // variable ca be empting by setting the value to null.
+    var cars; // values is undefined.
+    var person = null; // value is null.
+    // The typeof and Null. you can use the js typeof operator to find the ty[e of js variable
+    // Example
+     typeof "John";// returns string.
+     typeof 3.15;  // returns number.
+     typeof false; // returns boolean.
+     typeof [1, 2, 3]; // returns Object.
+     typeof {name:"john", age:34}; // returns object. or
+     typeof "Janbuca" + "<br>" + typeof  3.55 + "<br>" + typeof true + typeof x;
+     // the typeof operator returns object for object, arrays, and null;
+     // primitive Data
+
+     // JavaScript Aritmentic Operators
+     operator      Description
+     +             Addition 
+     -             Subtraction
+     *             Multiplication
+     /             Division 
+     %          Modulus(Remainder). 
+     ++         Increment
+     --         decodeURIComponent
+
+     // JavaScript Assignment operator
+     // assignment operators assign values to js varriables in js the equal sign (=) "assignment" operators id not an "equal to" operator
+     x = x+5; 
+
+     operator      Example      same as
+     =             x = y        x = y
+     +=            x +=y        x = x+y
+     -=            x -=y        x = x-y
+     *=            x *=y        x = x*y
+     %=            x %=y        x = x%y
+
+    //  javaScript comparison operators
+    OPerator                    Description
+    ==                          equal to 
+    ===                         equual value and not equal type
+    !=                          not equal
+    !==                         not equal value or not equal data type
+    >                           greater than
+    <                           less than 
+    >=                          greater than or equal to 
+    <=                          less than or equal to
+    ?                           ternary operator.Addition
+    
+    javaScript Logical Operators
+    Operator            Description
+    &&                   logical and 
+    ||                   logical or 
+    !                    logical not 
+
+
+
+
+      var v = 5 + 5 + "5";
+
+      var Fullname = "Janbuca" + " " + "Teshome" + " " + "Tabesh";
+      // It is the Array
+      var Car = ["Fored", "volvo", "MARC"];
+
+      var Name = {FirstName: "Firew", MidelName: "Tabech", LastName: "Teshome", age: 25};
+
+      document.getElementById("demo").innerHTML=(Customer + " "+" " + itemname + " " + Price);
+      document.getElementById('demo1').innerHTML=(z);
+      document.getElementById('demo2').innerHTML=(v);
+      document.getElementById('demo3').innerHTML=(Fullname);
+      document.writeln(Customer + " " +" " + itemname + " " + Price);
+      document.writeln(z);
+      document.writeln(v);
+      document.writeln(Fullname);
+      document.writeln("<br>"+(x==y) + "<br>" + (y==c));
+      document.writeln(Car[2]);
+    
+    //   document.writeln(Name[MidelName];
+    </script>
+  </body>
+</html>

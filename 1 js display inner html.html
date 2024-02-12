@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--Why Study javascript?
+     1. HTML to be define the content of Web page.
+     2. CSS to specify the layout of webpage.
+     3. JAVASCRIPT to be program the behavior of webpage.
+   Javascript not only used for webpage it also used many desktop and server side. mast to be known Node.js.
+
+Js can be do...
+      * Event handlers can be used to handle, and verify, user input, user action, and browser actions-->
+<html>
+   <head>
+      <meta charset = "utf-8">
+	  <title>display innerHTML</title>
+   </head>
+   <body>
+      <h2>InnerHTML</h2>
+      <p id = "display"></p>
+	   <p id = "out"></p>
+      <!-- display using innerHTML -->
+      <script>
+	      document.getElementById("display").innerHTML = 9 + 9;
+		   document.getElementById("out").innerHTML = "My Name is Janbuca Teshome";
+      </script>
+
+      <!-- Display using document.write() -->
+      <!-- To display the date and time. -->
+      <button type="button" onclick="document.write('My Name is Janbuca Teshome/Tabech')">Click Me</button><br>
+      <button type = "button" onclick = "document.getElementById('demo').innerHTML = Date()">
+         click to display Date and Time.</button>
+         <p id = "demo">Shome my Date and Time</p>
+
+         <!-- To incring the size of the value. -->
+         <p id = "large">Javascript can be change the style of the Html.</p>
+      <button type = "button" onclick = "document.getElementById('large').style.fontSize = '35px'">Click me</button>
+
+      <!-- To display the (hidden)none display  Element -->
+         <p>Javascript cna be show the hidden of HTML element.</p>
+         <p id = "none" style = "display:none">Hello my follower</p>
+      <button type = "button" onclick = "document.getElementById('none').style.display = 'block'">Click Me</button>
+
+      <!-- javascript can be hidden the HTML element -->
+         <p>javascript can be hidden the HTML element.</p>
+         <p id = "hidden">Hidden the HTML element.</p>
+      <button type = "button" onclick = "document.getElementById('hidden').style.display = 'none'">Click Me</button>
+     
+   </body>
+</html>

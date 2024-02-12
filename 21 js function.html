@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Function</title>
+</head>
+<body>
+    <h2>Js Function</h2>
+    
+    <script>
+
+        // //Function declare define 
+        // myname("Janbuca" + " Teshome");
+        // //Additon(200, 300); for line 70.       
+
+        Add();
+        Sub();
+        Mul();
+        Div();
+        Mod();
+
+
+        function Add(){
+            console.log("Adding two numbers");
+            var num1 = 500;
+            var num2 = 300;
+            var sum = num1 + num2;
+            console.log(sum);
+            
+        }
+
+        function Sub(){
+            console.log("Subtraction of two numbers");
+            var a = 50;
+            var b = 10;
+            var c = a-b;
+            console.log(c);
+        }
+
+        function Mul(){
+            console.log("The Product of two numbers");
+            var e = 100;
+            var t = 5000;
+            var tte = e * t;
+            console.log(tte);
+        }
+
+        function Div(){
+            console.log("The Divsion of two numbers");
+            let e = 225;
+            let h = 25;
+            let i = e / h;
+            console.log(i);
+        }
+
+        function Mod() {
+            console.log("The Reminder of the two numbers");
+            var num1 = 5;
+            var num2 = 2;
+            var num = num1 % num2;
+            console.log(num);
+        }
+
+        var car = ["volvo", "toyota", "BMW", "Tesla"];
+        console.log(car);
+        console.log(car[0]);
+        console.log(car[1]);
+        console.log(car[2]);
+        console.log(car[3]);
+
+       
+        // function myname(x, y){
+        //     console.log("My Name is =>");
+        //     console.log(x, y);
+        // }     
+
+    //Function with argument and return a value.
+     function Additon(num3, num4 ){
+            var add = num3 + num4;
+            //console.log(add);
+            return add;            
+        }
+
+         
+        console.log(Additon(100, 200));
+        function Avg(num1, num2){
+            var avg;
+            avg = Additon(num1, num2) / 2;
+            return avg;
+        }
+
+        var av = Avg(90, 100);
+        console.log(av);
+    // </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Js display</title>
+    </head>
+    <body>
+        <h2>Js Tutorials</h2>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+        <script>
+
+            var Customer = "Janbuca", itemname= "Diner Table", Price = 500;
+            var x, y, z;
+            x = 25;
+            y = 55.90;
+            c = 55.90;
+            z = x+y;
+
+            var v = 5+5+"5";
+
+            var Fullname = "Janbuca"+" "+"Teshome"+" "+"Tabesh";
+
+            var Car = ["Fored", "volvo", "MARC"];
+
+            
+            document.getElementById("demo").innerHTML=(Customer + " " +" " + itemname + " " + Price);
+            document.getElementById('demo1').innerHTML=(z);
+            document.getElementById('demo2').innerHTML=(v);
+            document.getElementById('demo3').innerHTML=(Fullname);
+            document.writeln(Customer + " " +" " + itemname + " " + Price);
+            document.writeln(z);
+            document.writeln(v);
+            document.writeln(Fullname);
+            document.writeln("<br>"+(x==y) + "<br>" + (y==c));
+            document.writeln(Car[2]);           
+        </script>                                    
+    </body>
+</html>

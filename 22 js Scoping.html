@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoping</title>
+</head>
+<body>
+    <h2>Js Scoping(Global and Local variables)</h2>
+    <script>
+          const Stud = () =>"Selam Selam pis new"; //Arrow function.
+        
+        var mycontry = "Ethio";
+        Adis_Abeab();
+        Diredawa();
+
+        function Adis_Abeab() {
+           console.log("The city of Adis Abeba");
+           var city1 = "Bole";
+           console.log(city1);
+           console.log("I love  my contry " + mycontry);
+           // console.log(Adis_Yeka);
+           console.log(mycontry);
+
+           {
+               let Adis_Yeka = "Kotebe";
+               console.log(city1);                               
+               
+           }
+           
+        }
+
+        function Diredawa() {
+           console.log("The city of Dredawa");
+           var city2 = "gende_qorwe"
+           console.log(city2);
+           console.log("I love  my contry " + mycontry);
+        }
+    </script>
+    <script>    
+      var carName = "Toyota"; // It is Global variables
+        myCar1();               // calling of the function.
+        myCar2();
+
+        function myCar1(params) {
+            var carName1 = "BMW"; // local variables
+            console.log("The Name of the firest car is " + carName1);
+            console.log("The Global name " + carName);
+            {
+                // online display the block element. let, const
+                let car3;
+                const car = 5;
+            }
+        }
+
+        
+
+        function myCar2() {
+            console.log("The Name of the second car is"+carName);
+            console.log(carName1); // can't display b/c it working online in mycar1
+        }
+
+        
+    </script>
+</body>
+</html>

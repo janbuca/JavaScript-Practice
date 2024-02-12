@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions on functions</title>
+</head>
+<body>
+    <h1>2<sup>nd</sup> Weeks Questions on functions</h1>
+
+        <!-- Question 1
+            ● Define a simple function named myFirst that prints the word "Hello" on the console
+                ○ First define the function
+                ○ Then call the function -->
+            <!-- <script>
+                myFirst();
+                function myFirst() {
+                    console.log("Hello all of Evangadi Familley!!!");
+                }
+            </script> -->
+
+        <!-- Question 2
+            ● Define a function called mySecond that takes a parameter and prints the parameter on console
+                ○ Feel free to give any value as a parameter in your function -->
+            <!-- <script>
+                    var squ = mySecond(3);
+                    console.log("Calculate the square of '3' is " + squ); 
+                    function mySecond(x) {                    
+                     var x;
+                     var y = x*x; 
+                     return y;                      
+                    }
+                </script> -->
+
+        <!-- Question 3
+            ● Define a function called myThird that takes a parameter and prints the parameter on the console. But, it uses mySecond function to print the parameter on the console -->
+            <!-- <script>
+               
+                function myThird(x, y) {
+                    console.log("Calculate the cube number in the 2nd question return.");
+                    var a;
+                    var cub = mySecond(x) * a;
+                }
+
+                var cube = myThird(5, 5);
+                console.log(cube);             
+                
+            </script> -->
+
+        <!-- Question 4
+            ● Write a function named myFourth that takes an array as a parameter and prints only the first value of the array on the console. Remember, this question is here to explain the concept of function delegation in JavaScript. -->
+            <!-- <script>
+                myFourth(["Volvo", "BMW", "Toyota", "Tesla", "Honda"]);
+                myFourth(car);
+                function myFourth(car) { 
+                    console.log("The First car of the arry is " + car[0])                    
+                }
+                
+                
+            </script> -->
+
+        <!-- Question 5
+            ● Write a function named myFifth that takes an array with two numbers in it as a parameter and prints the sum of the two numbers on console -->
+            <!-- <script>
+                //function myFifth();
+                function myFifth() {
+                    var a = 10, b =15;
+                    var c = a+b;
+                    return c;
+                }
+            </script> -->
+
+        <!-- Question 6
+            ● Write a function that takes an integer minutes and converts it to seconds. -->
+            <!-- <script>
+                function name(params) {
+                    
+                }                
+            </script> -->
+
+        <!-- Question 7
+            ● Create a function that takes a number as a parameter, increments the number by +1 and returns the result -->
+            <!-- <script>                
+                function inc (n) {
+                    console.log("The Given Number auto Increment by one.")
+                    if (typeof num != "Number") {
+                        return "The Entering Number is not corect plase change the corect values"
+                    }else{
+                        return n+1;
+                    }
+                  }
+                  var num1 = inc (5)
+                  //console.log(num1);
+                
+                
+            </script> -->
+
+        <!-- Question 8
+            ● Write a function that takes the base and height of a triangle and         1   returns its area -->
+            <!-- <script>
+                function areTri(width, height) {
+                    console.log("Plase Calculate the area of the 'Triangle' is")
+
+                    if ((width <= 0|| height <=0) || (typeof  width !== "Number" || typeof height !== "Number")) {
+                        return "Onley enter a Number";
+                    }else{
+                        return ((width * height) / 2);
+                    }
+                }
+                console.log(areTri(5, 5));
+            </script> -->               
+            <!-- <script>               
+                var areaRec = function (width, height){
+                    console.log("Plase Calculate the area of the rectangle is")
+                    if ((width <= 0|| height <=0) || (typeof  width !== "Number" || typeof height !== "Number")) {
+                        return "Onley enter a Number";
+                    }else{
+                        return ((width * height));
+                    }                    
+                }
+                console.log(areaRec(5, 15));
+               </script> -->            
+
+        <!-- Question 9
+            ● Create a function that returns the total number of legs of all the animals. In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species (chickens = 2 legs, cows =, 4 legs, pigs = 4 legs). Remember: the farmer wants to know the total number of legs and not the total number of animals. -->
+            <!-- <script>
+                function animalsLegs(chickens, cows, pigs) {
+                    if (chickens <= 0 ||cows <=0 || chickens <=0) {
+                        return "It Only Enter a postif "
+                    }else if (typeof chickens !== "Number" ||typeof cows !== "Number" ||typeof chickens !== "Number") {
+                        
+                    } else {
+                        return ((chickens * 2) + (cows* 4) + (chickens * 4));
+                    }                    
+                }
+                console.log(nimalsLegs(5, 9, 5));
+            </script> -->
+
+        <!-- Question 10 (not from edabit.com)
+            ● Create a function that takes an array containing only TWO numbers as a parameter and returns a value that is 3 times the first element of the array. -->
+            <!-- <script>
+                function arrayTwo(n) {
+                    return [n[0] * 3, n[1]];
+                }
+                var arr = ([30, 2]);
+                console.log(arrayTwo(arr));
+            </script> -->
+
+        <!-- Questions on Conditional statements and - practice exercise -->
+
+        <!-- Question 11
+            ● Create a function that returns true when num1 is equal to num2; otherwise return false. -->
+            <!-- <script>    
+                function num(num1, num2) {
+                       if(num1=num2){
+                        return "True";
+                    }else{
+                        return "False";
+                    }
+                }
+                console.log(num(5,5));
+                function Add();
+            </script> -->
+
+        <!-- Question 12
+            ● Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false. -->
+            <!-- <script>
+                function int(a) {
+                    if (a % 100 !==0) {
+                        return "False!!!";                        
+                    }else{
+                        return "True!!!";
+                    }                    
+                }
+                console.log(10000);
+            </script> -->
+
+        <!-- Question 13
+            ● Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers -->
+            <!-- <script>
+                name(50);
+                function name(x) {
+                    if ((x % 2) == 0) {
+                        console.log('The Given Number is "Even"');
+                    }else{
+                        console.log('The Given Number is "ODD"');
+                    }
+                } 
+            </script> -->
+           
+        <!-- Question 14
+            ● Create a function that returns
+                ○ “Invalid score” if score is above 100 or score is a negative number
+                ○ “Grade A” when score is between 90 and 100 (both 90 and 100 included)
+                ○ “Grade B” when score is between 80 and 89 (both 80 and 89 included)
+                ○ “Grade C” for any score below 79 -->
+            <!-- <script>
+                    function name(params) {
+                        
+                    }
+                </script> -->
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js while loop</title>
+</head>
+<body>
+    <h2>Js while and Do while Loop</h2>
+    <!-- Syntax =>>
+
+            while(condition){
+                code block to be executed
+            }  -->
+
+    <script>
+       
+        var i = 0;
+        var txt = " ";
+        while (i<=3) {
+            // console.log(i);
+            // i++;
+             txt += "The number is " + i + "\n"; 
+             i++;            
+        }
+        console.log(txt);
+    </script>
+
+    <script>
+        var i = 10;
+        var txt;
+        do {
+            txt += "The Number is" + i;
+            i++;
+        } while (i < 20);
+
+        console.log("The do While loop");
+        console.log(txt);
+    </script>
+
+    <script>
+        var n = 10;
+        console.log("The Enter is  a Natural Number");      
+        let i=0;
+        while(i < 5){
+        n++;
+       }
+       console.log(i + "\t"); 
+    </script>
+    
+    <script>        
+        let n = 50;
+   do{
+       console.log(i + "\t");
+              n = n-5;
+   }while(n >= 5);
+
+    </script>
+
+    <script>
+        
+   var n = 100, a = 1, sum = 0;
+   do{
+       if(i%2==0)
+       sum +=i;
+       i++;
+   }while(i<=n);
+   //cout <<"\n"<<sum;
+
+    </script>
+</body>
+</html>

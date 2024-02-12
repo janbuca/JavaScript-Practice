@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+
+<body>
+    <h2>Js If Loop</h2>
+     <script>
+        for (let i = 0; i <= 5; i++) {
+            console.log("hi all " + i);
+            
+        }
+    </script> 
+
+     <script>
+        var sum = 0 ;
+        for (let num = 0;     num < 5;     num++) {
+            sum = sum + num;
+            //console.log(sum);            
+        }
+       console.log(sum); 
+       // 0 + 1 
+        
+    </script>
+
+    <script>
+        function addup1(num) {
+            let sum = 0;
+            for (let i = 1;         i <= num;          i++) {
+                sum = sum + i;// 1+2+3+4+                
+            }
+            //console.log(addup1(600));
+
+            return sum;
+            
+        }
+        console.log(addup1(5));
+    </script>
+
+     <script>
+            let num;
+        for ( num = 0;    num < 100;     num++) {
+
+            if (num % 2 == 0) {
+               // console.log(num);
+            } 
+                       
+        }
+       console.log(num);
+        
+    </script>
+
+    
+    <script>
+        var n;
+        var cars = ["BMW", "Volvo",  "Ford"]
+
+        for ( num of cars) {
+            if (num === "Ford") {
+                console.log("Fored is my list");
+            }
+
+            // var txt = " ";
+            // txt += cars[n]; // txt = txt + cars[n]
+
+            // console.log(txt); 
+            //console.log(cars);         
+        }
+        //console.log(cars); 
+    </script>
+        
+    <script>
+        var txt = " ";
+        var person = {fname:"Janbuca", lname:"Teshom", age:23};
+        var x;
+        for (x in person){
+            txt += person[x] + " ";
+            //console.log(txt);
+        }
+        console.log(txt);
+    </script>
+
+</body>
+</html>

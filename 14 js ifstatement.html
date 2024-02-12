@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_Statement</title>
+</head>
+<body>
+    <h2>If else Conditions</h2>
+    <script>
+        if (new Date().getHours() > 16) {
+            console.log("Good Day");
+        }else if(new Date().getHours() < 16) {
+            console.log("Good Moring")
+        } else{
+            console.log("Good Evening")
+        }      
+    </script>
+
+
+        <script>
+            let x=20;
+            let y=20;
+            if (x > y) {
+                console.log("x is greator than y");
+            }else if (x < y){
+                console.log("x is less than y");
+            }else{
+                console.log("They are Equall");
+            }
+        </script>
+
+
+    <script>
+         var pass = 50;
+        var Score = 85;
+        if (score>pass) {
+            console.log("Hey your are passed")
+        }
+        else{
+            console.log("Hey your are Failed")
+        }
+
+    </script>
+    <script>        
+        // Ternary Operator
+        // condition ? retuens IfTure :
+
+        var pass = 50;
+        var score = 80;
+        let result = score >= pass ? "Hi your are passed": "your are failed";
+
+        console.log(result);
+    </script>
+    <script>
+        let j=5, k=20, min;
+        min = (j<k)?j:k;
+        consol.log(min);
+    </script>
+    
+</body>
+</html>
+
+

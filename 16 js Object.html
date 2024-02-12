@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <!-- object can be contain many values. -->
+    <p id="demo"></p>
+    <p id="dem1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <h2>JavaScribt Object</h2>
+    <script>        
+        // create an object.
+        var car = {type:"Fiat", model:"F500", color:"white", price:"$50012"};
+
+        // Display some data from the object.
+        document.getElementById("demo").innerHTML = car.type + " "+"is" +" "+ car.model +" "+ car.price + " "+ car.color;
+
+
+        var person ={
+            firstName: "John",
+            lastName:"Doe",
+            id:999, 
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // display data from the object.
+        document.getElementById("demo2").innerHTML.person.fullName();
+
+        var custom ={
+            firstName:"Janbuca",
+            lastName:"Teshome",
+            age:18,
+            eyeColor:"bule"
+        };
+        document.getElementById("demo1").innerHTML = custom.firstName + "is" + custom.lastName + custom.age + "years old" + custom.eyeColor;
+    </script>
+</body>
+</html>
